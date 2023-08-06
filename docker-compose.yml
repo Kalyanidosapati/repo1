@@ -6,5 +6,8 @@ services:
         - "8081:80"
       volumes:
         - "Myvolume"
-      Networks:
+      networks:
         - "MyNetwork"
+networks:
+   Mynetwork:
+      driver: bridge
