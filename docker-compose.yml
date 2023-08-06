@@ -7,7 +7,7 @@ services:
       volumes:
         - "Myvolume"
       networks:
-        - "MyNetwork"
+        - "Mynetwork"
 networks:
    Mynetwork:
       driver: bridge
