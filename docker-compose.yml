@@ -1,8 +1,10 @@
 version: "3.3"
 services:
    frontent:
-      build: . /var/lib/jenkins/workspace/firstjob
+      build: . 
       ports:
         - "8081:80"
       volumes:
         - "Myvolume"
+      Networks:
+        - "MyNetwork"
